@@ -97,6 +97,8 @@ print(tuple[1:4])
 
 
 #6.사전, 집합 자료형
+
+#사전 자료형
 #-사전 자료형은 key와 value의 쌍을 데이터로 가지는 자료형입니다.
 #   앞서 다루었던 리스트나 튜플이 값을 순차적으로 저장하는 것과는 대비됩니다.
 #사전 자료형은 키와 값의 쌍을 데이터로 가지며, 원하는 '변경 불가능한(immutable) 자료형'을 키로 사용할 수 있습니다.
@@ -117,8 +119,47 @@ if '사과' in data:
 key_list = data.keys()
 
 #값 데이터만 담은 리스트
-value_list = data.keys()
+value_list = data.values()
 
 print(key_list)
 print(value_list)
+
 #각 키에 따른 값을 하나씩 출력
+for key in key_list:
+    print(data[key])
+
+a = dict()
+a['홍길동'] = 97
+a['이순신'] = 98
+
+print(a)
+
+b = {
+    '홍길동' : 97,
+    '이순신' : 98
+}
+
+print(b)
+key_list = b.keys()
+value_list = b.values()
+print(key_list)
+print(value_list)
+
+print(b['이순신'])
+
+#집합 자료형
+#집합의 특징 - 중복을 허용하지 않는다. - 순서가 없다.
+#집합은 리스트 혹은 문자열을 이용해서 초기화할 수 있습니다.
+#   이 때 set()함수를 이용합니다.
+# 혹은 중괄호 ({}) 안에 각 원소를 콤마를 기준으로 구분하여 삽임함으로써 초기화할 수 있습니다.
+# 데이터의 조회 및 수정에 있어서 O(1)의 시간에 처리할 수 있습니다.(사전자료형과 동일)
+
+
+#집합 자료형 초기화 방법 1
+data = set([1,1,2,3,4,4,5])
+print(data)
+
+# 집합 자료형 초기화 방법 2
+data = {1,1,2,3,4,4,5}
+print(data)
+
