@@ -114,3 +114,7 @@ while True:
 
 #예제1. 점수가 80점 넘으면 합격
 scores = [90,85,77,65,97]
+
+for i in range(len(scores)):
+    if scores[i]>80:
+        print(i + 1, '번 학생은', scores[i], '점으로 합격입니다.')
