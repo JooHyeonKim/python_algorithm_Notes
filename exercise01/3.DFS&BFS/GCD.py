@@ -1,5 +1,5 @@
 def gcd_recursive(x,y):
-    print('x: ', x, ',y: ', y)
+    #print('x: ', x, ',y: ', y)
     if x%y ==0:
         return y
     return gcd_recursive(y,x%y)
