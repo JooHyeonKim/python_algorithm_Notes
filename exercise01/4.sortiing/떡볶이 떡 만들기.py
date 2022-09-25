@@ -6,14 +6,14 @@ def binary_search(array,m,start,end):
     if start > end:
         return mid
 
-    print('(', start , end ,') mid: ', mid, end=' ')
+    #print('(', start , end ,') mid: ', mid, end=' ')
 
     leftover = 0
     for i in range(n):
         if array[i] > mid:
             leftover += (array[i]-mid)
 
-    print('leftover: ',leftover)
+    #print('leftover: ',leftover)
 
     if leftover == m:
         return mid
