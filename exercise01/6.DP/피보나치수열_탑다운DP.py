@@ -3,6 +3,7 @@
 d = [0]*100
 
 def fibbo(x):
+    print('fibbo(',x,')')
     if x == 1 or x == 2:
         return 1
 
@@ -13,4 +14,4 @@ def fibbo(x):
         d[x] = fibbo(x-1) + fibbo(x-2)
         return d[x]
 
-print(fibbo(99))
+print(fibbo(6))
